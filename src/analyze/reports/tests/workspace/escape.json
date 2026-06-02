@@ -1,0 +1,14 @@
+{
+  "title": "Container Security Research Results Matrix Report",
+  "date": "2026-05-25T03:13:05.631370",
+  "summary": {
+    "total_phases": 0,
+    "total_test_cases": 0,
+    "total_successes": 0,
+    "total_failures": 0,
+    "total_blocked": 0
+  },
+  "matrix": {
+    "matrix": {}
+  }
+}
