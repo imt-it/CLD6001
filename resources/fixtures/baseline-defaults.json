@@ -1,0 +1,34 @@
+{
+  "profile": {
+    "id": "baseline-defaults",
+    "label": "Baseline defaults",
+    "study_role": "baseline"
+  },
+  "support": {
+    "docker": {
+      "rootful": true,
+      "rootless": true
+    },
+    "podman": {
+      "rootless": true
+    }
+  },
+  "docker": {
+    "no_new_privileges": false,
+    "seccomp_profile": "",
+    "live_restore": true
+  },
+  "podman": {
+    "policy_mode": "permissive",
+    "seccomp_profile": "",
+    "pids_limit": 0
+  },
+  "metadata": {
+    "results_slug": "baseline-defaults",
+    "docs_label": "Baseline defaults"
+  },
+  "research_overlays": [
+    "permissive-lab",
+    "selinux-research-policy"
+  ]
+}
