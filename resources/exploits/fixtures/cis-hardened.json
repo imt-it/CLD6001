@@ -1,0 +1,33 @@
+{
+  "profile": {
+    "id": "cis-hardened",
+    "label": "CIS-aligned hardened",
+    "study_role": "hardened"
+  },
+  "support": {
+    "docker": {
+      "rootful": true,
+      "rootless": true
+    },
+    "podman": {
+      "rootless": true
+    }
+  },
+  "docker": {
+    "no_new_privileges": true,
+    "seccomp_profile": "",
+    "live_restore": true
+  },
+  "podman": {
+    "policy_mode": "restricted",
+    "seccomp_profile": "/usr/share/containers/seccomp.json",
+    "pids_limit": 1024
+  },
+  "metadata": {
+    "results_slug": "cis-hardened",
+    "docs_label": "CIS-aligned hardened"
+  },
+  "research_overlays": [
+    "selinux-research-policy"
+  ]
+}
